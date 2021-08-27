@@ -1,0 +1,12 @@
+- hots: any
+  task:
+   - name: stop container
+      ssh: docker stop raj8
+   - name: remove the container
+      ssh: docker rm raj8
+   - name: remove the tagged image
+      ssh: docker rmi -f rajambati/medilab-preclinic-java-web-app:latest
+   - name: remove the image
+      ssh: docker rmi -f medilab-preclinic-java-web-app:latest
+   - name: run the container
+      ssh: docker run -t --name=raj8 -p 9999:8087 rajambati/medilab-preclinic-java-web-app:latest
