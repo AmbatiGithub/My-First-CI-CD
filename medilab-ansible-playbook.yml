@@ -1,5 +1,5 @@
+---
 - hosts: any
-  connection: ssh
 
   tasks:
   - name: stop container
