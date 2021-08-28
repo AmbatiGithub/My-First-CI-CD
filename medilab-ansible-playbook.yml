@@ -2,17 +2,17 @@
 - hosts: all
 
   tasks:
-    - name: stop container
-      shell: docker stop raj8
+   - name: stop container
+     shell: docker stop raj8
 
-    - name: remove the container
-      shell: docker rm raj8
+   - name: remove the container
+     shell: docker rm raj8
 
-    - name: remove the tagged image
-      shell: docker rmi -f rajambati/medilab-preclinic-java-web-app:latest
+   - name: remove the tagged image
+     shell: docker rmi -f rajambati/medilab-preclinic-java-web-app:latest
 
-    - name: remove the image
-      shell: docker rmi -f medilab-preclinic-java-web-app:latest
+   - name: remove the image
+     shell: docker rmi -f medilab-preclinic-java-web-app:latest
   
    - name: run the container 
-     shell: docker run -t --name=raj8 -p 9898:8087 rajambati/medilab-preclinic-java-web-app:latest
+     shell: docker run -td --name=raj8 -p 9898:8087 rajambati/medilab-preclinic-java-web-app:latest
