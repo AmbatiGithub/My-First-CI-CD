@@ -1,4 +1,6 @@
 - hosts: any
+  sudo: yes
+  connection: ssh
 
   tasks:
   - name: stop container
