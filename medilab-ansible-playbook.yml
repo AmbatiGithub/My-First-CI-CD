@@ -1,5 +1,4 @@
 - hosts: any
-  sudo: yes
   connection: ssh
 
   tasks:
