@@ -2,7 +2,7 @@
 - hosts: all
 
   tasks:
-#  - name: stop container
+ #  - name: stop container
  #   shell: docker stop raj8
 
   #- name: remove the container
