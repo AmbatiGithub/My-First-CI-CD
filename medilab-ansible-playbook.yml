@@ -1,6 +1,7 @@
 ---
 - hosts: any
    tasks:
+   
    - name: stop container
       ssh: docker stop raj8
      
